@@ -1,0 +1,22 @@
+<% provide(:title, "Work") %>
+<header class="header header__dark">
+  <title><%= yield(:title) %> | Grisha.me</title>
+  <div class="container">
+    <nav>
+      <div class="logo"><a href="/" class="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="31" viewBox="0 0 80 31">
+          <path d="M2.062 29.787h29.875l-14.938-27.239-14.938 27.239zm31.938 1.213h-34l17-31 17 31zM40 2.547l-14.938 27.239h29.875l-14.938-27.239zm17 28.453h-34l17-31 17 31zM48.062 29.787h29.875l-14.938-27.239-14.938 27.239zm31.938 1.213h-34l17-31 17 31z"></path>
+        </svg>
+      </a></div>
+      <div class="email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+          <polygon fill="#FFFFFF" points="9.3 .3 7.9 1.7 12.2 6 0 6 0 8 12.2 8 7.9 12.3 9.3 13.7 16 7" opacity=".305"></polygon>
+        </svg>
+        <button id="show-modal" class="email-link">nedprofit@gmail.com</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<%= render 'layouts/list_work' %>
+
