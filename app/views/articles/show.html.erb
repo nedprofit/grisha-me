@@ -1,0 +1,24 @@
+<% provide(:title, @article.title) %>
+<%= render 'layouts/header' %>
+
+<div class="container blog-single">
+  <article class="hentry">
+    <header class="hentry-header"><h1 title="<%= @article.title %>" class="big-title">
+      <%= @article.title %>
+    </h1>
+      <div>
+        <time class="tiny">5/25/2020</time>
+      </div>
+    </header>
+    <div>
+      <%= @article.text %>
+    </div>
+  </article>
+  <ul class="blog-single-share-links">
+    <li><p class="font-sans">Действия со статьей:</p></li>
+    <li><%= link_to 'Изменить статью', edit_article_path(@article) %></li>
+  </ul>
+</div>
+
+
+<%= link_to 'Back', articles_path %>

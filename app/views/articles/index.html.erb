@@ -1,0 +1,25 @@
+<% provide(:title, "Blog") %>
+<%= render 'layouts/header' %>
+
+<section class="container blog-index">
+  <%= link_to 'Новая статья', new_article_path, :class => "btn-link" %>
+  <div class="blog-index-intro"><h1 class="big-title">Блог</h1>
+    <p class="text-lg">Место, где я делюсь различными советами, статьями или ресурсами. Или пытаюсь быть забавным.</p>
+  </div>
+
+  <div>
+    <% @articles.each do |article| %>
+      <article class="blog_post">
+        <a href="<%=article_path(article)%>" class="blog_post-link"><h1 class="blog_post-title"><%= article.title %></h1>
+          <div>
+            <time class="tiny">5/25/2020</time>
+          </div>
+        </a>
+        <%= link_to 'Изменить', edit_article_path(article) %>
+        <%= link_to 'Удалить', article_path(article),
+                    method: :delete,
+                    data: { confirm: 'Are you sure?' } %>
+      </article>
+    <% end %>
+  </div>
+</section>

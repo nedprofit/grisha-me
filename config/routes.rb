@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get 'work' => 'static_pages#work'
   get 'home' => 'static_pages#home'
-  get 'blog' => 'static_pages#blog'
+  get 'blog' => 'articles#index'
+  resources :articles
+
 end

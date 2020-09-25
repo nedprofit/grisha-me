@@ -1,0 +1,13 @@
+<%= render 'layouts/header' %>
+
+<% provide(:title, "Изменить статью") %>
+
+<section class="container blog-index">
+  <%= link_to 'Назад', articles_path, :class => "btn-link" %>
+
+  <div>
+    <%= render 'form' %>
+  </div>
+</section>
+
+
