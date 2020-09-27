@@ -1,4 +1,3 @@
-@import url(//hello.myfonts.net/count/34c70e);
 
 :root {
   --brand-primary: #e6a200;
@@ -1328,38 +1327,38 @@ eyebrow[data-v-2ab1e5ec] {
 
 @font-face {
   font-family: Gibson-SemiboldIt;
-  src: url(../fonts/gibson-semiboldIt.eot);
-  src: url(../fonts/gibson-semiboldIt.eot?#iefix) format("embedded-opentype"),
-  url(../fonts/gibson-semiboldIt.woff2) format("woff2"),
-  url(../fonts/gibson-semiboldIt.woff) format("woff"),
-  url(../fonts/gibson-semiboldIt.ttf) format("truetype")
+  src: url(public/fonts/gibson-semibold.ttf);
+  src: url(public/fonts/gibson-semibold.ttf) format("embedded-opentype"),
+  url(public/fonts/gibson-semibold.ttf) format("woff2"),
+  url(public/fonts/gibson-semibold.ttf) format("woff"),
+  url(public/fonts/gibson-semibold.ttf) format("truetype")
 }
 
 @font-face {
   font-family: Gibson-Regular;
-  src: url(../fonts/gibson-regular.eot);
-  src: url(../fonts/gibson-regular.eot?#iefix) format("embedded-opentype"),
-  url(../fonts/gibson-regular.woff2) format("woff2"),
-  url(../fonts/gibson-regular.woff) format("woff"),
-  url(../fonts/gibson-regular.ttf) format("truetype")
+  src: url(public/fonts/gibson-regular.ttf);
+  src: url(public/fonts/gibson-regular.ttf) format("embedded-opentype"),
+  url(public/fonts/gibson-regular.ttf) format("woff2"),
+  url(public/fonts/gibson-regular.ttf) format("woff"),
+  url(public/fonts/gibson-regular.ttf) format("truetype")
 }
 
 @font-face {
   font-family: Gibson-SemiBold;
-  src: url(../fonts/gibson-semiBold);
-  src: url(../fonts/gibson-semiBold.eot?#iefix) format("embedded-opentype"),
-  url(../fonts/gibson-semiBold.woff2) format("woff2"),
-  url(../fonts/gibson-semiBold.woff) format("woff"),
-  url(../fonts/gibson-semiBold.ttf) format("truetype")
+  src: url(public/fonts/gibson-semibold.ttf);
+  src: url(public/fonts/gibson-semibold.ttf) format("embedded-opentype"),
+  url(public/fonts/gibson-semibold.ttf) format("woff2"),
+  url(public/fonts/gibson-semibold.ttf) format("woff"),
+  url(public/fonts/gibson-semibold.ttf) format("truetype")
 }
 
 @font-face {
   font-family: Gibson-Bold;
-  src: url(../fonts/gibson-bold.eot);
-  src: url(../fonts/gibson-bold.eot?#iefix) format("embedded-opentype"),
-  url(../fonts/gibson-bold.woff2) format("woff2"),
-  url(../fonts/gibson-bold.woff) format("woff"),
-  url(../fonts/gibson-bold.ttf) format("truetype")
+  src: url(public/fonts/gibson-bold.ttf);
+  src: url(public/fonts/gibson-bold.ttf) format("embedded-opentype"),
+  url(public/fonts/gibson-bold.ttf) format("woff2"),
+  url(public/fonts/gibson-bold.ttf) format("woff"),
+  url(public/fonts/gibson-bold.ttf) format("truetype")
 }
 
 @font-face {
