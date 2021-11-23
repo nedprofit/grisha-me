@@ -608,6 +608,7 @@ label {
 }
 
 .work__title {
+  background: url(asset-path("soon.png")) no-repeat 50%;
   font-family: Gibson-SemiBold, sans-serif;
   color: var(--text-color);
   margin: 0;
@@ -962,7 +963,7 @@ label {
 }
 
 .work__article .work__title {
-  padding-top: 1rem
+  padding-top: 1rem;
 }
 
 .work__article .work__content {
