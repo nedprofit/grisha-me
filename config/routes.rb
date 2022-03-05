@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get 'work' => 'static_pages#work'
   get 'home' => 'static_pages#home'
+  get 'declinator' => 'static_pages#declinator'
   get 'blog' => 'articles#index'
   resources :articles
 

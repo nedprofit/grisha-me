@@ -1,0 +1,49 @@
+<% provide(:title, "Declinator") %>
+<div id="__layout">
+  <div>
+    <div>
+      <div>
+        <header class="header header__work header__shadow">
+          <div class="container">
+            <nav>
+<!----><!----><a href="/" class="pagination nuxt-link-active">
+              View all work
+              <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+                <g class="nc-icon-wrapper">
+                  <path d="M6,24H0v-6h6V24z"></path>
+                  <path d="M15,15H9V9h6V15z"></path>
+                  <path d="M6,15H0V9h6V15z"></path>
+                  <path d="M15,6H9V0h6V6z"></path>
+                  <path d="M6,6H0V0h6V6z"></path>
+                  <path d="M24,6h-6V0h6V6z"></path>
+                  <rect data-color="color-2" height="4" width="4" x="19" y="19"></rect>
+                  <rect data-color="color-2" height="4" width="4" x="19" y="10"></rect>
+                  <rect data-color="color-2" height="4" width="4" x="10" y="19"></rect>
+                </g>
+              </svg>
+            </a><!----></nav>
+          </div>
+        </header><!----></div>
+      <div class="container">
+        <div class="work-hero-slant"></div>
+        <article class="work__article"><h1 class="work__title-single h1" title="Declinator">Declinator</h1>
+          <div class="work--image-wrapper">
+            <%= image_tag("img.png", :alt => "cat?") -%>
+          </div>
+          <div class="work__content">
+            <p>
+              Сайт, позволяющий склонять по падежам имя, фамилию и отчество, которые отдаются ему на кириллице.
+              За работоспособность алгоритма огромное спасибо разработчикам гема Petrovich.
+
+              Имеется поддержка обработки одновременно нескольких данных, написанных с каждой новой строки.
+            <hr>
+              Исходники тут: <%= link_to "https://github.com/nedprofit/declinator", "https://github.com/nedprofit/declinator" %>
+            <hr>
+              А потыкать в режиме онлайна можно тут: <%= link_to "https://declinator.herokuapp.com", "https://declinator.herokuapp.com" %>
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
