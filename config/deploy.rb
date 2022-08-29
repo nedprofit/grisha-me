@@ -1,13 +1,14 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.17.1"
 
-set :application, "Grisha-me"
+set :application, "grisha-me"
 set :repo_url, "git@github.com:nedprofit/grisha-me.git"
 set :passenger_environment_variables, {
   'PASSENGER_INSTANCE_REGISTRY_DIR' => '/var/run/passenger-instreg'
 }
 # Deploy to the user's home directory
 set :deploy_to, "/home/deploy/#{fetch :application}"
+append :linked_files, "config/master.key"
 
 namespace :bundler do
   before 'bundler:install', :config

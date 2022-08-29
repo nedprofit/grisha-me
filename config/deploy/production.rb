@@ -8,7 +8,7 @@
 # server "db.example.com", user: "deploy", roles: %w{db}
 
 
-server '5.44.41.232', user: 'deploy', roles: %w{app db web}
+server '5.44.41.232', user: 'postgres', roles: %w{app db web}
 
 # role-based syntax
 # ==================
