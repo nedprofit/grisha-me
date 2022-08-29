@@ -5,6 +5,7 @@ lock "~> 3.17.1"
 
 set :application, "grisha-me"
 set :repo_url, "git@github.com:nedprofit/grisha-me.git"
+
 set :passenger_environment_variables, {
   'PASSENGER_INSTANCE_REGISTRY_DIR' => '/var/run/passenger-instreg'
 }
@@ -15,6 +16,21 @@ set :deploy_to, "/home/deploy/#{fetch :application}"
 namespace :bundler do
   before 'bundler:install', :config
   desc 'bundle config options'
+end
+
+append :linked_files, "config/master.key"
+set :linked_files, %w{config/master.key}
+
+namespace :deploy do
+  namespace :check do
+    before :linked_files, :set_master_key do
+      on roles(:app), in: :sequence, wait: 10 do
+        unless test("[ -f #{shared_path}/config/master.key ]")
+          upload! 'config/master.key', "#{shared_path}/config/master.key"
+        end
+      end
+    end
+  end
 end
 
 set :passenger_restart_with_touch, true
