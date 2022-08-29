@@ -15,6 +15,7 @@ namespace :bundler do
   desc 'bundle config options'
 end
 set :passenger_restart_with_touch, true
+set :linked_files, %w{config/credentials/production.key}
 
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 
